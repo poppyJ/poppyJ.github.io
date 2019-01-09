@@ -893,7 +893,7 @@ canvas_nest:
 # three_waves
 three_waves: false
 # canvas_lines
-canvas_lines: false
+canvas_lines: true
 # canvas_sphere
 canvas_sphere: false
 
