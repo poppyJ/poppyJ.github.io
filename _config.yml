@@ -1,0 +1,129 @@
+# Hexo Configuration 站点配置文件
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site 网站配置
+# 网站标题
+title: poppyJ's Blog
+# 网站副标题
+subtitle: 假装是个萌妹子 🐰
+# 网站描述
+description: 2019 努力变成更好的自己 💪
+keywords:
+# 昵称, 用于主题显示文章的作者
+author: poppyJ
+# 网站使用的语言(英文:en, 简体中文:zh-Hans，繁体中文:zh-tw，Next 主题使用:zh-CN)
+language: zh-CN
+# 网站时区，用于生成页面时填充相关时间，默认使用电脑时区，一般不用改
+timezone: Asia/Shanghai
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+# 站点网址
+url: https://poppyj.github.io/
+# 网站根目录
+root: /
+# 文章的永久链接格式
+permalink: :year/:month/:day/:title/
+# 永久链接中各部分的默认值
+permalink_defaults:
+
+# Directory 目录
+# 资源文件夹，这个文件夹用来存放博客内容
+source_dir: source
+# 公共文件夹，这个文件夹用来存放生成的站点静态文件
+public_dir: public
+# 标签文件夹
+tag_dir: tags
+# 归档文件夹
+archive_dir: archives
+# 分类文件夹
+category_dir: categories
+# Include code文件夹
+code_dir: downloads/code
+# 国际化文件夹，存放各种语言定义
+i18n_dir: :lang
+# 跳过指定文件的渲染
+skip_render:
+
+# Writing
+# 新文章的文件名称
+new_post_name: :title.md # File name of new posts
+# 预设布局
+default_layout: post
+# 在中文和英文之间加入空格
+auto_spacing: true
+# 把标题转换为 title case
+titlecase: false # Transform title into titlecase
+# 在新标签中打开链接
+external_link: true # Open external links in new tab
+# 把文件名称转换为 (1) 小写或 (2) 大写
+filename_case: 0
+# 显示草稿
+render_drafts: false
+# 开启文章资源文件夹
+post_asset_folder: true
+# 把链接改为与根目录的相对位址
+relative_link: false
+# 显示未来的文章
+future: true
+# 解决英文引号半角变全角
+marked:
+  smartypants: false
+# 代码块的设置
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
+# Category & Tag 分类 & 标签
+# 默认分类
+default_category: uncategorized
+# 分类别名
+category_map:
+# 标签别名
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+# Hexo 使用 Moment.js 来解析和显示时间
+# 日期格式
+date_format: YYYY-MM-DD
+# 时间格式
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+# 每页显示的文章量 (0 = 关闭分页功能)
+per_page: 10
+pagination_dir: page
+
+# Extensions 扩展
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+# 主题
+theme: next
+
+# Deployment 部署
+## Docs: https://hexo.io/docs/deployment.html
+# 这里使用 Travis CI 博客管理自动部署 source 分支到 master
+## Docs: https://liolok.github.io/Hexo-Travis-CI/
+deploy:
+- type: git
+  repo: git@github.com:poppyJ/poppyJ.github.io.git
+  branch: master
+- type: git
+  repo: git@git.dev.tencent.com:poppyJ/poppyJ.git
+  branch: master
