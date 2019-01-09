@@ -1,0 +1,35 @@
+language: node_js  #设置语言
+
+node_js: stable  #设置相应的版本
+
+# 开始构建
+before_install:
+  - export TZ='Asia/Shanghai'  #统一构建环境和博客配置的时区, 防止文章时间错误
+  
+install:
+  - npm install  #配置Hexo环境
+
+script:
+  - hexo cl  #清除
+  - hexo g  #生成
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "poppyJ"  #用户名
+  - git config user.email "2392805553@qq.com"  #邮箱
+  - git add .
+  - git commit -m "Site deployed by Travis CI"  #提交Commit时的说明
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master  #GH_TOKEN是在Travis中配置Token的名称
+# 结束构建
+
+branches:
+  only:
+    - source  #只监测master之外新增的source分支
+env:
+ global:
+   - GH_REF: github.com/poppyJ/poppyJ.github.io.git  #设置GH_REF
+
+cache:
+  directories:  #缓存特定目录, 加快构建速度
+    - node_modules
