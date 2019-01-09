@@ -214,8 +214,9 @@ links_icon: link
 links_title: Links
 links_layout: block
 #links_layout: inline
-#links:
-  #Title: http://example.com
+# 友情链接
+# links:
+  # Title: http://example.com
 
 # Sidebar Avatar
 avatar:
@@ -526,7 +527,7 @@ pangu: false
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: c4b9d62e1d93cb97050cdd3fd32877d9
 
 # Growingio Analytics ID
 # Copyright 2015-2018 GrowingIO, Inc. More info available at https://www.growingio.com
@@ -599,6 +600,9 @@ gitalk:
 # Warning: Baidu Share does not support https.
 baidushare:
   type: slide
+
+# JiaThis 分享服务
+jiathis: true
 
 # AddThis Share, See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools
@@ -736,9 +740,6 @@ busuanzi_count:
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
 baidu_push: false
 
-# JiaThis 分享服务
-jiathis: true
-
 # Google Calendar
 # Share your recent schedule to others via calendar page.
 # API Documentation: https://developers.google.com/google-apps/calendar/v3/reference/events/list
@@ -771,7 +772,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto

@@ -127,3 +127,10 @@ deploy:
 - type: git
   repo: git@git.dev.tencent.com:poppyJ/poppyJ.git
   branch: master
+
+# Local Search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
