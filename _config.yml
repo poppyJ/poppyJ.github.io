@@ -127,10 +127,20 @@ deploy:
 - type: git
   repo: git@git.dev.tencent.com:poppyJ/poppyJ.git
   branch: master
+  # other deployer
+- type: leancloud_counter_security_sync
 
-# Local Search
+# Local Search 自定义站点内容搜索
 search:
   path: search.xml
   field: post
   format: html
   limit: 10000
+
+# leancloud 安全设置
+leancloud_counter_security:
+  enable_sync: true
+  app_id: JwuHFSlkvEDptJMieCHaw5Je-gzGzoHsz
+  app_key: NqSkMr64VCncU26z4jol6iRY
+  username: 2392805553
+  password: 1340692282Lj
