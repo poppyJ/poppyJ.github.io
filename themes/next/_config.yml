@@ -706,7 +706,7 @@ leancloud_visitors:
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-  security: false
+  security: true
   # 由于Leancloud免费版的云引擎存在请求线程数和运行时间限制以及休眠机制，很多时候访客数量加载会很慢。如果设置betterPerformance为true，则网页则会在提交请求之前直接显示访客人数为查询到的人数+1，以增加用户体验
   betterPerformance: true
 
@@ -858,7 +858,7 @@ motion:
 # Choose only any one variant, do not need to install both.
 # To install 2.x: https://github.com/theme-next/theme-next-fancybox
 # To install 3.x: https://github.com/theme-next/theme-next-fancybox3
-fancybox: true
+fancybox: false
 
 # Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
