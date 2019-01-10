@@ -311,8 +311,10 @@ post_meta:
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
 symbols_count_time:
   separated_meta: true
+  # 文章中的显示是否显示文字（本文字数|阅读时长）
   item_text_post: true
-  item_text_total: false
+  # 网页底部的显示是否显示文字（站点总字数|站点阅读时长）
+  item_text_total: true
   awl: 4
   wpm: 275
 
@@ -322,9 +324,9 @@ codeblock:
   border_radius:
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result
-    show_result: false
+    show_result: true
 
 # Wechat Subscriber
 #wechat_subscriber:
@@ -705,7 +707,7 @@ leancloud_visitors:
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
   security: true
   # 由于Leancloud免费版的云引擎存在请求线程数和运行时间限制以及休眠机制，很多时候访客数量加载会很慢。如果设置betterPerformance为true，则网页则会在提交请求之前直接显示访客人数为查询到的人数+1，以增加用户体验
-  betterPerformance: true
+  betterPerformance: false
 
 # Another tool to show number of visitors to each article.
 # Visit https://console.firebase.google.com/u/0/ to get apiKey and projectId.
