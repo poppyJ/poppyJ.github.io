@@ -588,7 +588,7 @@ gitment:
 gitalk:
   enable: true
   github_id: poppyJ  # Github repo owner
-  repo: git@github.com:poppyJ/poppyJ.github.io.git  # Repository name to store issues.
+  repo: poppyJ.github.io  # Repository name to store issues.
   client_id: 9d1321703751154e75d4  # Github Application Client ID
   client_secret: 35f5a3cd6c7bc30ec4d60f8b1f97c94aaa63544e  # Github Application Client Secret
   admin_user: poppyJ  # GitHub repo owner and collaborators, only these guys can initialize github issues
