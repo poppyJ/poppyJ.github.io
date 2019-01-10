@@ -265,7 +265,7 @@ sidebar:
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
   # Back to top in sidebar.
-  b2t: true
+  b2t: false
   # Scroll percent label in b2t button.
   scrollpercent: true
   # Enable sidebar on narrow view (only for Muse | Mist).
@@ -586,12 +586,12 @@ gitment:
 # Demo: https://gitalk.github.io
 # Reference: https://asdfv1929.github.io/2018/01/20/gitalk/, https://liujunzhou.cn/2018/8/10/gitalk-error/#more
 gitalk:
-  enable: false
-  github_id:  # Github repo owner
-  repo:  # Repository name to store issues.
-  client_id:  # Github Application Client ID
-  client_secret:  # Github Application Client Secret
-  admin_user:  # GitHub repo owner and collaborators, only these guys can initialize github issues
+  enable: true
+  github_id: poppyJ  # Github repo owner
+  repo: git@github.com:poppyJ/poppyJ.github.io.git  # Repository name to store issues.
+  client_id: 9d1321703751154e75d4  # Github Application Client ID
+  client_secret: 35f5a3cd6c7bc30ec4d60f8b1f97c94aaa63544e  # Github Application Client Secret
+  admin_user: poppyJ  # GitHub repo owner and collaborators, only these guys can initialize github issues
   distraction_free_mode: true # Facebook-like distraction free mode
 
 # Baidu Share
