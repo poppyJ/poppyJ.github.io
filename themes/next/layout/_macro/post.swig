@@ -469,4 +469,10 @@
   {######################}
   </article>
 
+  {% if post.top %}
+    <i class="fa fa-thumb-tack"></i>
+    <font color=#fc6423>置顶</font>
+    <span class="post-meta-divider">|</span>
+  {% endif %}
+
 {% endmacro %}
