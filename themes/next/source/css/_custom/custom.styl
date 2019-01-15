@@ -1,18 +1,5 @@
 // Custom styles. 博客样式自定义
 
-// 网站标题栏背景颜色
-.site-meta {
-  background: url(//www.toptal.com/designers/subtlepatterns/patterns/gplaypattern.png) #f8f8f8 !important; //修改为自己喜欢的颜色
-}
-
-// 鼠标样式
-// * {
-//   cursor: url("http://om8u46rmb.bkt.clouddn.com/sword2.ico"),auto!important
-// }
-// :active {
-//   cursor: url("http://om8u46rmb.bkt.clouddn.com/sword1.ico"),auto!important
-// }
-
 // 主页文章添加阴影效果
 .post {
   margin-top: 0px;
@@ -20,4 +7,66 @@
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+}
+
+// 头部顶栏边框
+.headband {
+  display: none;
+}
+
+// 头部 - 简介 & 功能部分
+.header {
+  background: url(//www.toptal.com/designers/subtlepatterns/patterns/gplaypattern.png) #f8f8f8 !important;
+
+  .header-inner {
+    padding: 20px 0 10px;
+
+    .site-brand-wrapper .brand {
+      background: none;
+
+      .site-title {
+        font-size: 28px;
+        font-family: 'Comic Sans MS', sans-serif;
+        color: pink;
+      }
+    }
+
+    .site-nav .menu { 
+      margin-top: 10px;
+
+      .menu-item {
+        margin: 0;
+
+        a {
+          font-size: 14px;
+          color: #0f2e41;
+          border-radius: 4px;
+          padding: 0 10px;
+          border: none;
+
+          &:hover { 
+            transition-duration: 0.3s;
+            background: #e1e1e1;
+            border-bottom-color: #222;
+          }
+
+          .menu .menu-item .fa { 
+            margin-right: 5px;
+          }
+
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 文章主体内容
+.main {
+  
+  .posts-expand { 
+    padding-top: 60px;
+  }
 }

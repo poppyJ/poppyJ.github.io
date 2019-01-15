@@ -6,7 +6,7 @@
 # 网站标题
 title: poppyJ's Blog
 # 网站副标题
-subtitle: 假装是个萌妹子 🐰
+subtitle: 
 # 网站描述
 description: 2019 努力变成更好的自己 💪
 keywords:
@@ -76,7 +76,8 @@ marked:
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  # 代码自动高亮
+  auto_detect: true
   tab_replace:
   
 # Home page setting
