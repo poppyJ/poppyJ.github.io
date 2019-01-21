@@ -1,72 +1,132 @@
 // Custom styles. 博客样式自定义
 
-// 主页文章添加阴影效果
-.post {
-  margin-top: 0px;
-  margin-bottom: 60px;
-  padding: 25px;
-  -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
-  -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
-}
+// 自定义样式
+.container {
 
-// 头部顶栏边框
-.headband {
-  display: none;
-}
+  // 头部 - 顶栏边框
+  .headband {
+    display: none;
+  }
 
-// 头部 - 简介 & 功能部分
-.header {
-  background: url(//www.toptal.com/designers/subtlepatterns/patterns/gplaypattern.png) #f8f8f8 !important;
+  // 头部 - 简介 & 功能部分
+  .header {
+    height: 150px;
+    background: url(/images/background.jpg) center 0px no-repeat;
+    background-size: cover;
 
-  .header-inner {
-    padding: 20px 0 10px;
+    .header-inner {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      box-sizing: border-box;
+      padding: 0 0 10px;
 
-    .site-brand-wrapper .brand {
-      background: none;
+      .site-brand-wrapper .brand {
+        background: none;
 
-      .site-title {
-        font-size: 28px;
-        font-family: 'Comic Sans MS', sans-serif;
-        color: pink;
+        .site-title {
+          font-size: 28px;
+          font-family: 'Comic Sans MS', sans-serif;
+          color: pink;
+        }
       }
-    }
 
-    .site-nav .menu { 
-      margin-top: 10px;
+      .site-nav .menu { 
+        margin-top: 10px;
 
-      .menu-item {
-        margin: 0;
+        .menu-item {
+          margin: 0;
 
-        a {
-          font-size: 14px;
-          color: #0f2e41;
-          border-radius: 4px;
-          padding: 0 10px;
-          border: none;
+          a {
+            color: #eee;
+            font-size: 14px;
+            border-radius: 4px;
+            padding: 0 10px;
+            border: none;
 
-          &:hover { 
-            transition-duration: 0.3s;
-            background: #e1e1e1;
-            border-bottom-color: #222;
-          }
+            &:hover { 
+              transition-duration: 0.3s;
+              background: rgba(63,132,186,.8);
+              border-bottom-color: #222;
+            }
 
-          .menu .menu-item .fa { 
-            margin-right: 5px;
-          }
+            .menu .menu-item .fa { 
+              margin-right: 5px;
+            }
 
-          br {
-            display: none;
+            br {
+              display: none;
+            }
           }
         }
       }
     }
   }
-}
 
-// 文章主体内容
-.main {
-  
-  .posts-expand { 
-    padding-top: 60px;
+  // 主体内容 - 文章
+  .main {
+
+    // 文章 - 顶部留白
+    .content-wrap .posts-expand {
+      padding-top: 60px;
+
+      // 文章 - 边缘添加阴影效果
+      .post {
+        margin-top: 0px;
+        margin-bottom: 60px;
+        padding: 25px;
+        -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
+        -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+      }
+    }
+
+    // 侧边栏 - 目录部分
+    .sidebar {
+      background: #fff;
+      box-shadow: inset 2px 2px 20px #bdb2b2;
+
+      .sidebar-inner {
+        color: rgba(63,132,186,.8);
+
+        .sidebar-nav {
+
+          li:hover {
+            color: rgba(63,132,186,.6);
+          }
+
+          .sidebar-nav-active {
+            color: rgba(63,132,186,.8);
+            border-bottom-color: rgba(63,132,186,.8);
+          }
+        }
+
+        .site-author-name {
+          color: rgba(63,132,186,.8);
+        }
+      }
+
+      .post-toc-wrap {
+        ol a:hover {
+          color: rgba(63,132,186,.6);
+          border-bottom-color: rgba(63,132,186,.6);
+        }
+
+        .active > a, .active-current > a {
+          color: rgba(63,132,186,.8);
+        }
+      }
+    }
+
+    //侧边栏 - 按钮样式
+    .sidebar-toggle {
+      background: rgb(63,132,186);
+    }
   }
+
+  // 向上箭头
+  .back-to-top {
+    background: rgb(63,132,186);
+  }
+
 }
