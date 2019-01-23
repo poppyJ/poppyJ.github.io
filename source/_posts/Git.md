@@ -1,6 +1,7 @@
 ---
 title: Git
 date: 2019-01-23 18:34:53
+categories: Git
 tags: Git
 top: 10
 ---

@@ -143,12 +143,12 @@ exturl: false
 menu:
   # 主页
   home: / || home
-  # 归档页
-  archives: /archives/ || archive
   # 标签页
   tags: /tags/ || tags
   # 分类页
   categories: /categories/ || th
+  # 归档页
+  archives: /archives/ || archive
   # 关于页面 需手动创建
   about: /about/ || user
   #schedule: /schedule/ || calendar
