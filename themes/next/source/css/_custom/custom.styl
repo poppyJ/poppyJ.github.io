@@ -71,13 +71,25 @@
     .content-wrap .posts-expand {
       padding-top: 60px;
 
-      // 文章 - 边缘添加阴影效果
       .post {
+        // 文章 - 边缘添加阴影效果
         margin-top: 0px;
         margin-bottom: 60px;
         padding: 25px;
         -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
         -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+
+        // 文章 - 阅读全文按钮
+        a.btn {
+          background: rgba(63,132,186,.8);
+          border: 2px solid rgba(63,132,186,.8);
+
+          &:hover { 
+            border-color: rgba(63,132,186,.8);
+            color: rgba(63,132,186,.8);
+            background: #fff;
+          }
+        }
       }
     }
 
@@ -129,4 +141,14 @@
     background: rgb(63,132,186);
   }
 
+  // 分享按钮
+  #needsharebutton-float .btn {
+    background: rgba(63,132,186,.8);
+    border: 1px solid rgba(63,132,186,.8);
+
+    &:hover {
+      color: rgba(63,132,186,.6);
+      background: #fff;
+    }
+  }
 }
