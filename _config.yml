@@ -143,10 +143,10 @@ search:
 # leancloud 安全设置
 leancloud_counter_security:
   enable_sync: true
-  app_id: JwuHFSlkvEDptJMieCHaw5Je-gzGzoHsz
-  app_key: NqSkMr64VCncU26z4jol6iRY
+  app_id: swYleTTBfYTvzUbgkoY9AjUY-gzGzoHsz
+  app_key: 8OKz6eRv6gqGWEyUoxUBiDWw
   username: 2392805553
-  password: 1340692282Lj
+  password: 1340692282Jin
 
 # 文章字数统计
 symbols_count_time:

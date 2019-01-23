@@ -97,7 +97,7 @@ footer:
 
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  custom_text: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.github.com/">GitHub Pages</a>
+  custom_text: 
 
 # Creative Commons 4.0 International License.
 # https://creativecommons.org/share-your-work/licensing-types-examples
@@ -700,8 +700,8 @@ rating:
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: true
-  app_id: JwuHFSlkvEDptJMieCHaw5Je-gzGzoHsz
-  app_key: NqSkMr64VCncU26z4jol6iRY
+  app_id: swYleTTBfYTvzUbgkoY9AjUY-gzGzoHsz
+  app_key: 8OKz6eRv6gqGWEyUoxUBiDWw
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
