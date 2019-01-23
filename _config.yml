@@ -25,7 +25,7 @@ url: https://poppyj.github.io/
 root: /
 # 文章的永久链接格式
 # permalink: :year/:month/:day/:title/
-permalink: :category/:title/
+permalink: :title/
 
 # 永久链接中各部分的默认值
 permalink_defaults:
