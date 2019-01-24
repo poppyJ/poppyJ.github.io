@@ -7,7 +7,7 @@
       <i class="fa fa-{{ theme.busuanzi_count.total_visitors_icon }}"></i>
     </span>
     <span class="site-uv" title="{{ __('footer.total_visitors') }}">
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      访客数 <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 人
     </span>
   {% endif %}
 
@@ -20,7 +20,7 @@
       <i class="fa fa-{{ theme.busuanzi_count.total_views_icon }}"></i>
     </span>
     <span class="site-pv" title="{{ __('footer.total_views') }}">
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      总访问量 <span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次
     </span>
   {% endif %}
 </div>

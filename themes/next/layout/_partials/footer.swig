@@ -10,19 +10,6 @@
   </span>
   <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright || author }}</span>
 
-  {% if config.symbols_count_time.total_symbols %}
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-    {% if theme.symbols_count_time.item_text_total %}
-      <span class="post-meta-item-text">{{ __('symbols_count_time.count_total') + __('symbol.colon') }}</span>
-    {% endif %}
-    <span title="{{ __('symbols_count_time.count_total') }}">{#
-    #}{{ symbolsCountTotal(site) }}{#
-  #}</span>
-  {% endif %}
-
   {% if config.symbols_count_time.total_time %}
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
@@ -53,6 +40,19 @@
   #}{{ __('footer.theme') }} – {{ next_url('https://theme-next.org', 'NexT.' + theme.scheme, {class: 'theme-link'}) }}{#
   #}{% if theme.footer.theme.version %} v{{ version }}{% endif %}{#
 #}</div>
+{% endif %}
+
+{% if config.symbols_count_time.total_symbols %}
+  <span class="post-meta-divider">|</span>
+  <span class="post-meta-item-icon">
+    <i class="fa fa-area-chart"></i>
+  </span>
+  {% if theme.symbols_count_time.item_text_total %}
+    <span class="post-meta-item-text">{{ __('symbols_count_time.count_total') + __('symbol.colon') }}</span>
+  {% endif %}
+  <span title="{{ __('symbols_count_time.count_total') }}">{#
+  #}{{ symbolsCountTotal(site) }}{#
+#}</span>
 {% endif %}
 
 {% if theme.footer.custom_text %}
