@@ -15,7 +15,7 @@ git checkout -b newBranch
 ```
 git branch -vv
 ```
-3. 将本地新建分支 `push` 到自己的本地远程 `origin ` 上，因为只在本地创建了一个新的分支，远程 `origin ` 上还没有该分支
+3. 将本地新建分支 `push` 到自己的本地远程 `origin` 上，因为只在本地创建了一个新的分支，远程 `origin` 上还没有该分支
 ```
 git push origin newBranch
 ```
@@ -32,17 +32,35 @@ git pull --rebase
 ## Git 仓库迁移，本地项目 git 地址变更：
 1. for http(s)：
 ```
-git remote set-url origin https://git.elenet.me/minimart/ma_smartshelf.git
+git remote set-url origin https://git.xxx.git
 ```
 2. for ssh：
 ```
-git remote set-url origin git@git.elenet.me:minimart/ma_smartshelf.git
+git remote set-url origin git@git.xxx.git
 ```
 
 ## 全局配置 git 用户名和邮箱
 ```
 git config --global user.name "Your Name"
 git config --global user.email "email@example.com"
+```
+
+## git push 错误 failed to push some refs to 解决
+```
+git pull --rebase origin master
+```
+
+## 将第三方库做为子项目添加到当前的站点目录下
+```
+git submodule add https://github.com/yourname/hexo-theme-next themes/next
+```
+导入子项目后，站点根目录会多出 `.gitmodules` 文件
+
+## fatal: refusing to merge unrelated histories 错误
+如果合并了两个不同的仓库，在新的 git 会发现这两个仓库可能不是同一个，为了防止开发者上传错误，就会提示。
+告诉 git 允许不相关历史合并：
+```
+git pull origin master --allow-unrelated-histories
 ```
 
 
@@ -444,24 +462,6 @@ git rebase master
 [Git速成班: git rebase - 子回的前端专栏 - 前端乱炖](http://www.html-js.com/article/Week-end-column-Git-crash-course-git-rebase)
 
 - - - -
-
-## git push 错误 failed to push some refs to 解决
-```
-git pull --rebase origin master
-```
-
-## 将第三方库做为子项目添加到当前的站点目录下
-```
-git submodule add https://github.com/yourname/hexo-theme-next themes/next
-```
-导入子项目后，站点根目录会多出 `.gitmodules` 文件
-
-## fatal: refusing to merge unrelated histories 错误
-如果合并了两个不同的仓库，在新的 git 会发现这两个仓库可能不是同一个，为了防止开发者上传错误，就会提示。
-告诉 git 允许不相关历史合并：
-```
-git pull origin master --allow-unrelated-histories
-```
 
 
 #学习📒/Git#
